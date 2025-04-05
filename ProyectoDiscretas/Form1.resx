@@ -121,7 +121,16 @@
     <value>17, 17</value>
   </metadata>
   <data name="lblInstrucciones.Text" xml:space="preserve">
-    <value>Instrucciones Marque Presencia para detectar personas en la habitación Marque las casillas para ABRIR ventanas y puertas sin marcar igual a cerradas Ajuste la temperatura con los controles numéricos Las luces se encienden automáticamente entre 6PM y 6AM si hay presencia El aire acondicionado se activa cuando la temperatura supera 22°C y la puerta y ventana están cerradas
-</value>
+    <value>Instrucciones:
+
+- Marque "Presencia" para detectar personas en la habitación.
+
+- Marque las casillas para ABRIR ventanas y puertas (sin marcar = cerradas).
+
+- Ajuste la temperatura con los controles numéricos.
+
+- Las luces se encienden automáticamente entre 6PM y 6AM si hay presencia.
+
+- El aire acondicionado se activa cuando la temperatura supera 22°C y la puerta y ventana están cerradas.</value>
   </data>
 </root>

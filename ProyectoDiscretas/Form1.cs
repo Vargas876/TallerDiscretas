@@ -24,7 +24,7 @@ namespace ProyectoDiscretas
             InitializeComponent();
             InitializeSimulation();
 
-          
+
         }
 
         private void InitializeSimulation()
@@ -119,6 +119,9 @@ namespace ProyectoDiscretas
             UpdateActuatorStates();
         }
 
-      
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

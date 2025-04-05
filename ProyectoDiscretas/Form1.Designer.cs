@@ -1,4 +1,7 @@
 ﻿// Form1.Designer.cs
+using System.Drawing;
+using System.Windows.Forms;
+
 namespace ProyectoDiscretas
 {
     partial class Form1
@@ -44,15 +47,15 @@ namespace ProyectoDiscretas
             this.chkVentanaComedor = new System.Windows.Forms.CheckBox();
             this.chkPresenciaComedor = new System.Windows.Forms.CheckBox();
             this.panelSala = new System.Windows.Forms.Panel();
+            this.lblLuzSala = new System.Windows.Forms.Label();
             this.lblACTextSala = new System.Windows.Forms.Label();
             this.lblLuzTextSala = new System.Windows.Forms.Label();
             this.lblTempTextSala = new System.Windows.Forms.Label();
             this.lblACSala = new System.Windows.Forms.Label();
-            this.lblLuzSala = new System.Windows.Forms.Label();
             this.lblSalaTitle = new System.Windows.Forms.Label();
             this.numTempSala = new System.Windows.Forms.NumericUpDown();
-            this.chkPuertaSala = new System.Windows.Forms.CheckBox();
             this.chkVentanaSala = new System.Windows.Forms.CheckBox();
+            this.chkPuertaSala = new System.Windows.Forms.CheckBox();
             this.chkPresenciaSala = new System.Windows.Forms.CheckBox();
             this.panelCocina = new System.Windows.Forms.Panel();
             this.lblACTextCocina = new System.Windows.Forms.Label();
@@ -73,8 +76,8 @@ namespace ProyectoDiscretas
             this.lblLuzHabitacion = new System.Windows.Forms.Label();
             this.lblHabitacionTitle = new System.Windows.Forms.Label();
             this.numTempHabitacion = new System.Windows.Forms.NumericUpDown();
-            this.chkPuertaHabitacion = new System.Windows.Forms.CheckBox();
             this.chkVentanaHabitacion = new System.Windows.Forms.CheckBox();
+            this.chkPuertaHabitacion = new System.Windows.Forms.CheckBox();
             this.chkPresenciaHabitacion = new System.Windows.Forms.CheckBox();
             this.timerClock = new System.Windows.Forms.Timer(this.components);
             this.lblCurrentTime = new System.Windows.Forms.Label();
@@ -94,7 +97,7 @@ namespace ProyectoDiscretas
             this.lblClock.AutoSize = true;
             this.lblClock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.lblClock.Location = new System.Drawing.Point(424, 12);
+            this.lblClock.Location = new System.Drawing.Point(484, 27);
             this.lblClock.Name = "lblClock";
             this.lblClock.Size = new System.Drawing.Size(62, 26);
             this.lblClock.TabIndex = 1;
@@ -102,6 +105,7 @@ namespace ProyectoDiscretas
             // 
             // panelComedor
             // 
+            this.panelComedor.BackColor = System.Drawing.Color.Transparent;
             this.panelComedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelComedor.Controls.Add(this.lblACTextComedor);
             this.panelComedor.Controls.Add(this.lblLuzTextComedor);
@@ -113,7 +117,7 @@ namespace ProyectoDiscretas
             this.panelComedor.Controls.Add(this.chkPuertaComedor);
             this.panelComedor.Controls.Add(this.chkVentanaComedor);
             this.panelComedor.Controls.Add(this.chkPresenciaComedor);
-            this.panelComedor.Location = new System.Drawing.Point(12, 12);
+            this.panelComedor.Location = new System.Drawing.Point(45, 33);
             this.panelComedor.Name = "panelComedor";
             this.panelComedor.Size = new System.Drawing.Size(200, 200);
             this.panelComedor.TabIndex = 5;
@@ -121,7 +125,7 @@ namespace ProyectoDiscretas
             // lblACTextComedor
             // 
             this.lblACTextComedor.AutoSize = true;
-            this.lblACTextComedor.Location = new System.Drawing.Point(10, 150);
+            this.lblACTextComedor.Location = new System.Drawing.Point(120, 165);
             this.lblACTextComedor.Name = "lblACTextComedor";
             this.lblACTextComedor.Size = new System.Drawing.Size(29, 13);
             this.lblACTextComedor.TabIndex = 9;
@@ -130,7 +134,7 @@ namespace ProyectoDiscretas
             // lblLuzTextComedor
             // 
             this.lblLuzTextComedor.AutoSize = true;
-            this.lblLuzTextComedor.Location = new System.Drawing.Point(10, 120);
+            this.lblLuzTextComedor.Location = new System.Drawing.Point(36, 105);
             this.lblLuzTextComedor.Name = "lblLuzTextComedor";
             this.lblLuzTextComedor.Size = new System.Drawing.Size(27, 13);
             this.lblLuzTextComedor.TabIndex = 8;
@@ -139,31 +143,29 @@ namespace ProyectoDiscretas
             // lblTempTextComedor
             // 
             this.lblTempTextComedor.AutoSize = true;
-            this.lblTempTextComedor.Location = new System.Drawing.Point(84, 65);
+            this.lblTempTextComedor.Location = new System.Drawing.Point(106, 3);
             this.lblTempTextComedor.Name = "lblTempTextComedor";
-            this.lblTempTextComedor.Size = new System.Drawing.Size(70, 13);
-            this.lblTempTextComedor.TabIndex = 7; 
+            this.lblTempTextComedor.Size = new System.Drawing.Size(93, 13);
+            this.lblTempTextComedor.TabIndex = 7;
             this.lblTempTextComedor.Text = "Temperatura (°C) :";
             // 
             // lblACComedor
             // 
             this.lblACComedor.AutoSize = true;
-            this.lblACComedor.BackColor = System.Drawing.Color.LightGray;
-            this.lblACComedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblACComedor.Location = new System.Drawing.Point(100, 150);
+            this.lblACComedor.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblACComedor.Location = new System.Drawing.Point(119, 180);
             this.lblACComedor.Name = "lblACComedor";
-            this.lblACComedor.Size = new System.Drawing.Size(29, 15);
+            this.lblACComedor.Size = new System.Drawing.Size(27, 13);
             this.lblACComedor.TabIndex = 0;
             this.lblACComedor.Text = "OFF";
             // 
             // lblLuzComedor
             // 
             this.lblLuzComedor.AutoSize = true;
-            this.lblLuzComedor.BackColor = System.Drawing.Color.LightGray;
-            this.lblLuzComedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLuzComedor.Location = new System.Drawing.Point(100, 120);
+            this.lblLuzComedor.BackColor = System.Drawing.Color.White;
+            this.lblLuzComedor.Location = new System.Drawing.Point(36, 118);
             this.lblLuzComedor.Name = "lblLuzComedor";
-            this.lblLuzComedor.Size = new System.Drawing.Size(29, 15);
+            this.lblLuzComedor.Size = new System.Drawing.Size(27, 13);
             this.lblLuzComedor.TabIndex = 1;
             this.lblLuzComedor.Text = "OFF";
             // 
@@ -179,7 +181,7 @@ namespace ProyectoDiscretas
             // 
             // numTempComedor
             // 
-            this.numTempComedor.Location = new System.Drawing.Point(100, 80);
+            this.numTempComedor.Location = new System.Drawing.Point(132, 19);
             this.numTempComedor.Maximum = new decimal(new int[] {
             40,
             0,
@@ -203,7 +205,7 @@ namespace ProyectoDiscretas
             // chkPuertaComedor
             // 
             this.chkPuertaComedor.AutoSize = true;
-            this.chkPuertaComedor.Location = new System.Drawing.Point(10, 80);
+            this.chkPuertaComedor.Location = new System.Drawing.Point(6, 177);
             this.chkPuertaComedor.Name = "chkPuertaComedor";
             this.chkPuertaComedor.Size = new System.Drawing.Size(57, 17);
             this.chkPuertaComedor.TabIndex = 4;
@@ -213,7 +215,7 @@ namespace ProyectoDiscretas
             // chkVentanaComedor
             // 
             this.chkVentanaComedor.AutoSize = true;
-            this.chkVentanaComedor.Location = new System.Drawing.Point(10, 50);
+            this.chkVentanaComedor.Location = new System.Drawing.Point(6, 43);
             this.chkVentanaComedor.Name = "chkVentanaComedor";
             this.chkVentanaComedor.Size = new System.Drawing.Size(66, 17);
             this.chkVentanaComedor.TabIndex = 5;
@@ -223,7 +225,7 @@ namespace ProyectoDiscretas
             // chkPresenciaComedor
             // 
             this.chkPresenciaComedor.AutoSize = true;
-            this.chkPresenciaComedor.Location = new System.Drawing.Point(10, 20);
+            this.chkPresenciaComedor.Location = new System.Drawing.Point(61, 75);
             this.chkPresenciaComedor.Name = "chkPresenciaComedor";
             this.chkPresenciaComedor.Size = new System.Drawing.Size(73, 17);
             this.chkPresenciaComedor.TabIndex = 6;
@@ -232,26 +234,38 @@ namespace ProyectoDiscretas
             // 
             // panelSala
             // 
+            this.panelSala.BackColor = System.Drawing.Color.Transparent;
             this.panelSala.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSala.Controls.Add(this.lblLuzSala);
             this.panelSala.Controls.Add(this.lblACTextSala);
             this.panelSala.Controls.Add(this.lblLuzTextSala);
             this.panelSala.Controls.Add(this.lblTempTextSala);
             this.panelSala.Controls.Add(this.lblACSala);
-            this.panelSala.Controls.Add(this.lblLuzSala);
             this.panelSala.Controls.Add(this.lblSalaTitle);
             this.panelSala.Controls.Add(this.numTempSala);
-            this.panelSala.Controls.Add(this.chkPuertaSala);
             this.panelSala.Controls.Add(this.chkVentanaSala);
+            this.panelSala.Controls.Add(this.chkPuertaSala);
             this.panelSala.Controls.Add(this.chkPresenciaSala);
-            this.panelSala.Location = new System.Drawing.Point(218, 12);
+            this.panelSala.Location = new System.Drawing.Point(240, 33);
             this.panelSala.Name = "panelSala";
-            this.panelSala.Size = new System.Drawing.Size(200, 200);
+            this.panelSala.Size = new System.Drawing.Size(200, 195);
             this.panelSala.TabIndex = 4;
+            // 
+            // lblLuzSala
+            // 
+            this.lblLuzSala.AutoSize = true;
+            this.lblLuzSala.BackColor = System.Drawing.Color.LightGray;
+            this.lblLuzSala.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblLuzSala.Location = new System.Drawing.Point(42, 43);
+            this.lblLuzSala.Name = "lblLuzSala";
+            this.lblLuzSala.Size = new System.Drawing.Size(29, 15);
+            this.lblLuzSala.TabIndex = 1;
+            this.lblLuzSala.Text = "OFF";
             // 
             // lblACTextSala
             // 
             this.lblACTextSala.AutoSize = true;
-            this.lblACTextSala.Location = new System.Drawing.Point(10, 150);
+            this.lblACTextSala.Location = new System.Drawing.Point(131, 26);
             this.lblACTextSala.Name = "lblACTextSala";
             this.lblACTextSala.Size = new System.Drawing.Size(29, 13);
             this.lblACTextSala.TabIndex = 12;
@@ -260,7 +274,7 @@ namespace ProyectoDiscretas
             // lblLuzTextSala
             // 
             this.lblLuzTextSala.AutoSize = true;
-            this.lblLuzTextSala.Location = new System.Drawing.Point(10, 120);
+            this.lblLuzTextSala.Location = new System.Drawing.Point(44, 25);
             this.lblLuzTextSala.Name = "lblLuzTextSala";
             this.lblLuzTextSala.Size = new System.Drawing.Size(27, 13);
             this.lblLuzTextSala.TabIndex = 11;
@@ -269,9 +283,9 @@ namespace ProyectoDiscretas
             // lblTempTextSala
             // 
             this.lblTempTextSala.AutoSize = true;
-            this.lblTempTextSala.Location = new System.Drawing.Point(84, 65);
+            this.lblTempTextSala.Location = new System.Drawing.Point(102, 140);
             this.lblTempTextSala.Name = "lblTempTextSala";
-            this.lblTempTextSala.Size = new System.Drawing.Size(70, 13);
+            this.lblTempTextSala.Size = new System.Drawing.Size(93, 13);
             this.lblTempTextSala.TabIndex = 10;
             this.lblTempTextSala.Text = "Temperatura (°C) :";
             // 
@@ -280,22 +294,11 @@ namespace ProyectoDiscretas
             this.lblACSala.AutoSize = true;
             this.lblACSala.BackColor = System.Drawing.Color.LightGray;
             this.lblACSala.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblACSala.Location = new System.Drawing.Point(100, 150);
+            this.lblACSala.Location = new System.Drawing.Point(131, 44);
             this.lblACSala.Name = "lblACSala";
             this.lblACSala.Size = new System.Drawing.Size(29, 15);
             this.lblACSala.TabIndex = 0;
             this.lblACSala.Text = "OFF";
-            // 
-            // lblLuzSala
-            // 
-            this.lblLuzSala.AutoSize = true;
-            this.lblLuzSala.BackColor = System.Drawing.Color.LightGray;
-            this.lblLuzSala.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLuzSala.Location = new System.Drawing.Point(100, 120);
-            this.lblLuzSala.Name = "lblLuzSala";
-            this.lblLuzSala.Size = new System.Drawing.Size(29, 15);
-            this.lblLuzSala.TabIndex = 1;
-            this.lblLuzSala.Text = "OFF";
             // 
             // lblSalaTitle
             // 
@@ -309,7 +312,7 @@ namespace ProyectoDiscretas
             // 
             // numTempSala
             // 
-            this.numTempSala.Location = new System.Drawing.Point(100, 80);
+            this.numTempSala.Location = new System.Drawing.Point(121, 165);
             this.numTempSala.Maximum = new decimal(new int[] {
             40,
             0,
@@ -330,30 +333,30 @@ namespace ProyectoDiscretas
             0});
             this.numTempSala.ValueChanged += new System.EventHandler(this.numTemp_ValueChanged);
             // 
-            // chkPuertaSala
-            // 
-            this.chkPuertaSala.AutoSize = true;
-            this.chkPuertaSala.Location = new System.Drawing.Point(10, 80);
-            this.chkPuertaSala.Name = "chkPuertaSala";
-            this.chkPuertaSala.Size = new System.Drawing.Size(57, 17);
-            this.chkPuertaSala.TabIndex = 4;
-            this.chkPuertaSala.Text = "Puerta";
-            this.chkPuertaSala.CheckedChanged += new System.EventHandler(this.chkSensor_CheckedChanged);
-            // 
             // chkVentanaSala
             // 
             this.chkVentanaSala.AutoSize = true;
-            this.chkVentanaSala.Location = new System.Drawing.Point(10, 50);
+            this.chkVentanaSala.Location = new System.Drawing.Point(63, 4);
             this.chkVentanaSala.Name = "chkVentanaSala";
             this.chkVentanaSala.Size = new System.Drawing.Size(66, 17);
             this.chkVentanaSala.TabIndex = 5;
             this.chkVentanaSala.Text = "Ventana";
             this.chkVentanaSala.CheckedChanged += new System.EventHandler(this.chkSensor_CheckedChanged);
             // 
+            // chkPuertaSala
+            // 
+            this.chkPuertaSala.AutoSize = true;
+            this.chkPuertaSala.Location = new System.Drawing.Point(6, 153);
+            this.chkPuertaSala.Name = "chkPuertaSala";
+            this.chkPuertaSala.Size = new System.Drawing.Size(57, 17);
+            this.chkPuertaSala.TabIndex = 4;
+            this.chkPuertaSala.Text = "Puerta";
+            this.chkPuertaSala.CheckedChanged += new System.EventHandler(this.chkSensor_CheckedChanged);
+            // 
             // chkPresenciaSala
             // 
             this.chkPresenciaSala.AutoSize = true;
-            this.chkPresenciaSala.Location = new System.Drawing.Point(10, 20);
+            this.chkPresenciaSala.Location = new System.Drawing.Point(27, 104);
             this.chkPresenciaSala.Name = "chkPresenciaSala";
             this.chkPresenciaSala.Size = new System.Drawing.Size(73, 17);
             this.chkPresenciaSala.TabIndex = 6;
@@ -362,6 +365,7 @@ namespace ProyectoDiscretas
             // 
             // panelCocina
             // 
+            this.panelCocina.BackColor = System.Drawing.Color.Transparent;
             this.panelCocina.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCocina.Controls.Add(this.lblACTextCocina);
             this.panelCocina.Controls.Add(this.lblLuzTextCocina);
@@ -373,15 +377,15 @@ namespace ProyectoDiscretas
             this.panelCocina.Controls.Add(this.chkPuertaCocina);
             this.panelCocina.Controls.Add(this.chkVentanaCocina);
             this.panelCocina.Controls.Add(this.chkPresenciaCocina);
-            this.panelCocina.Location = new System.Drawing.Point(12, 218);
+            this.panelCocina.Location = new System.Drawing.Point(41, 227);
             this.panelCocina.Name = "panelCocina";
-            this.panelCocina.Size = new System.Drawing.Size(200, 200);
+            this.panelCocina.Size = new System.Drawing.Size(200, 194);
             this.panelCocina.TabIndex = 3;
             // 
             // lblACTextCocina
             // 
             this.lblACTextCocina.AutoSize = true;
-            this.lblACTextCocina.Location = new System.Drawing.Point(10, 150);
+            this.lblACTextCocina.Location = new System.Drawing.Point(145, 100);
             this.lblACTextCocina.Name = "lblACTextCocina";
             this.lblACTextCocina.Size = new System.Drawing.Size(29, 13);
             this.lblACTextCocina.TabIndex = 12;
@@ -390,7 +394,7 @@ namespace ProyectoDiscretas
             // lblLuzTextCocina
             // 
             this.lblLuzTextCocina.AutoSize = true;
-            this.lblLuzTextCocina.Location = new System.Drawing.Point(10, 120);
+            this.lblLuzTextCocina.Location = new System.Drawing.Point(58, 37);
             this.lblLuzTextCocina.Name = "lblLuzTextCocina";
             this.lblLuzTextCocina.Size = new System.Drawing.Size(27, 13);
             this.lblLuzTextCocina.TabIndex = 11;
@@ -399,9 +403,9 @@ namespace ProyectoDiscretas
             // lblTempTextCocina
             // 
             this.lblTempTextCocina.AutoSize = true;
-            this.lblTempTextCocina.Location = new System.Drawing.Point(84, 65);
+            this.lblTempTextCocina.Location = new System.Drawing.Point(112, 20);
             this.lblTempTextCocina.Name = "lblTempTextCocina";
-            this.lblTempTextCocina.Size = new System.Drawing.Size(70, 13);
+            this.lblTempTextCocina.Size = new System.Drawing.Size(93, 13);
             this.lblTempTextCocina.TabIndex = 10;
             this.lblTempTextCocina.Text = "Temperatura (°C) :";
             // 
@@ -410,7 +414,7 @@ namespace ProyectoDiscretas
             this.lblACCocina.AutoSize = true;
             this.lblACCocina.BackColor = System.Drawing.Color.LightGray;
             this.lblACCocina.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblACCocina.Location = new System.Drawing.Point(100, 150);
+            this.lblACCocina.Location = new System.Drawing.Point(145, 113);
             this.lblACCocina.Name = "lblACCocina";
             this.lblACCocina.Size = new System.Drawing.Size(29, 15);
             this.lblACCocina.TabIndex = 0;
@@ -421,7 +425,7 @@ namespace ProyectoDiscretas
             this.lblLuzCocina.AutoSize = true;
             this.lblLuzCocina.BackColor = System.Drawing.Color.LightGray;
             this.lblLuzCocina.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLuzCocina.Location = new System.Drawing.Point(100, 120);
+            this.lblLuzCocina.Location = new System.Drawing.Point(61, 50);
             this.lblLuzCocina.Name = "lblLuzCocina";
             this.lblLuzCocina.Size = new System.Drawing.Size(29, 15);
             this.lblLuzCocina.TabIndex = 1;
@@ -439,7 +443,7 @@ namespace ProyectoDiscretas
             // 
             // numTempCocina
             // 
-            this.numTempCocina.Location = new System.Drawing.Point(100, 80);
+            this.numTempCocina.Location = new System.Drawing.Point(139, 40);
             this.numTempCocina.Maximum = new decimal(new int[] {
             40,
             0,
@@ -463,7 +467,7 @@ namespace ProyectoDiscretas
             // chkPuertaCocina
             // 
             this.chkPuertaCocina.AutoSize = true;
-            this.chkPuertaCocina.Location = new System.Drawing.Point(10, 80);
+            this.chkPuertaCocina.Location = new System.Drawing.Point(6, 138);
             this.chkPuertaCocina.Name = "chkPuertaCocina";
             this.chkPuertaCocina.Size = new System.Drawing.Size(57, 17);
             this.chkPuertaCocina.TabIndex = 4;
@@ -473,7 +477,7 @@ namespace ProyectoDiscretas
             // chkVentanaCocina
             // 
             this.chkVentanaCocina.AutoSize = true;
-            this.chkVentanaCocina.Location = new System.Drawing.Point(10, 50);
+            this.chkVentanaCocina.Location = new System.Drawing.Point(6, 90);
             this.chkVentanaCocina.Name = "chkVentanaCocina";
             this.chkVentanaCocina.Size = new System.Drawing.Size(66, 17);
             this.chkVentanaCocina.TabIndex = 5;
@@ -483,7 +487,7 @@ namespace ProyectoDiscretas
             // chkPresenciaCocina
             // 
             this.chkPresenciaCocina.AutoSize = true;
-            this.chkPresenciaCocina.Location = new System.Drawing.Point(10, 20);
+            this.chkPresenciaCocina.Location = new System.Drawing.Point(113, 158);
             this.chkPresenciaCocina.Name = "chkPresenciaCocina";
             this.chkPresenciaCocina.Size = new System.Drawing.Size(73, 17);
             this.chkPresenciaCocina.TabIndex = 6;
@@ -492,6 +496,7 @@ namespace ProyectoDiscretas
             // 
             // panelHabitacion
             // 
+            this.panelHabitacion.BackColor = System.Drawing.Color.Transparent;
             this.panelHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelHabitacion.Controls.Add(this.lblACTextHabitacion);
             this.panelHabitacion.Controls.Add(this.lblLuzTextHabitacion);
@@ -500,18 +505,18 @@ namespace ProyectoDiscretas
             this.panelHabitacion.Controls.Add(this.lblLuzHabitacion);
             this.panelHabitacion.Controls.Add(this.lblHabitacionTitle);
             this.panelHabitacion.Controls.Add(this.numTempHabitacion);
-            this.panelHabitacion.Controls.Add(this.chkPuertaHabitacion);
             this.panelHabitacion.Controls.Add(this.chkVentanaHabitacion);
+            this.panelHabitacion.Controls.Add(this.chkPuertaHabitacion);
             this.panelHabitacion.Controls.Add(this.chkPresenciaHabitacion);
-            this.panelHabitacion.Location = new System.Drawing.Point(218, 218);
+            this.panelHabitacion.Location = new System.Drawing.Point(247, 231);
             this.panelHabitacion.Name = "panelHabitacion";
-            this.panelHabitacion.Size = new System.Drawing.Size(200, 200);
+            this.panelHabitacion.Size = new System.Drawing.Size(193, 190);
             this.panelHabitacion.TabIndex = 2;
             // 
             // lblACTextHabitacion
             // 
             this.lblACTextHabitacion.AutoSize = true;
-            this.lblACTextHabitacion.Location = new System.Drawing.Point(10, 150);
+            this.lblACTextHabitacion.Location = new System.Drawing.Point(38, 24);
             this.lblACTextHabitacion.Name = "lblACTextHabitacion";
             this.lblACTextHabitacion.Size = new System.Drawing.Size(29, 13);
             this.lblACTextHabitacion.TabIndex = 12;
@@ -520,7 +525,7 @@ namespace ProyectoDiscretas
             // lblLuzTextHabitacion
             // 
             this.lblLuzTextHabitacion.AutoSize = true;
-            this.lblLuzTextHabitacion.Location = new System.Drawing.Point(10, 120);
+            this.lblLuzTextHabitacion.Location = new System.Drawing.Point(147, 1);
             this.lblLuzTextHabitacion.Name = "lblLuzTextHabitacion";
             this.lblLuzTextHabitacion.Size = new System.Drawing.Size(27, 13);
             this.lblLuzTextHabitacion.TabIndex = 11;
@@ -529,9 +534,9 @@ namespace ProyectoDiscretas
             // lblTempTextHabitacion
             // 
             this.lblTempTextHabitacion.AutoSize = true;
-            this.lblTempTextHabitacion.Location = new System.Drawing.Point(84, 65);
+            this.lblTempTextHabitacion.Location = new System.Drawing.Point(31, 74);
             this.lblTempTextHabitacion.Name = "lblTempTextHabitacion";
-            this.lblTempTextHabitacion.Size = new System.Drawing.Size(70, 13);
+            this.lblTempTextHabitacion.Size = new System.Drawing.Size(93, 13);
             this.lblTempTextHabitacion.TabIndex = 10;
             this.lblTempTextHabitacion.Text = "Temperatura (°C) :";
             // 
@@ -540,7 +545,7 @@ namespace ProyectoDiscretas
             this.lblACHabitacion.AutoSize = true;
             this.lblACHabitacion.BackColor = System.Drawing.Color.LightGray;
             this.lblACHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblACHabitacion.Location = new System.Drawing.Point(100, 150);
+            this.lblACHabitacion.Location = new System.Drawing.Point(38, 37);
             this.lblACHabitacion.Name = "lblACHabitacion";
             this.lblACHabitacion.Size = new System.Drawing.Size(29, 15);
             this.lblACHabitacion.TabIndex = 0;
@@ -551,7 +556,7 @@ namespace ProyectoDiscretas
             this.lblLuzHabitacion.AutoSize = true;
             this.lblLuzHabitacion.BackColor = System.Drawing.Color.LightGray;
             this.lblLuzHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLuzHabitacion.Location = new System.Drawing.Point(100, 120);
+            this.lblLuzHabitacion.Location = new System.Drawing.Point(145, 14);
             this.lblLuzHabitacion.Name = "lblLuzHabitacion";
             this.lblLuzHabitacion.Size = new System.Drawing.Size(29, 15);
             this.lblLuzHabitacion.TabIndex = 1;
@@ -569,7 +574,7 @@ namespace ProyectoDiscretas
             // 
             // numTempHabitacion
             // 
-            this.numTempHabitacion.Location = new System.Drawing.Point(100, 80);
+            this.numTempHabitacion.Location = new System.Drawing.Point(41, 90);
             this.numTempHabitacion.Maximum = new decimal(new int[] {
             40,
             0,
@@ -590,30 +595,30 @@ namespace ProyectoDiscretas
             0});
             this.numTempHabitacion.ValueChanged += new System.EventHandler(this.numTemp_ValueChanged);
             // 
-            // chkPuertaHabitacion
-            // 
-            this.chkPuertaHabitacion.AutoSize = true;
-            this.chkPuertaHabitacion.Location = new System.Drawing.Point(10, 80);
-            this.chkPuertaHabitacion.Name = "chkPuertaHabitacion";
-            this.chkPuertaHabitacion.Size = new System.Drawing.Size(57, 17);
-            this.chkPuertaHabitacion.TabIndex = 4;
-            this.chkPuertaHabitacion.Text = "Puerta";
-            this.chkPuertaHabitacion.CheckedChanged += new System.EventHandler(this.chkSensor_CheckedChanged);
-            // 
             // chkVentanaHabitacion
             // 
             this.chkVentanaHabitacion.AutoSize = true;
-            this.chkVentanaHabitacion.Location = new System.Drawing.Point(10, 50);
+            this.chkVentanaHabitacion.Location = new System.Drawing.Point(15, 168);
             this.chkVentanaHabitacion.Name = "chkVentanaHabitacion";
             this.chkVentanaHabitacion.Size = new System.Drawing.Size(66, 17);
             this.chkVentanaHabitacion.TabIndex = 5;
             this.chkVentanaHabitacion.Text = "Ventana";
             this.chkVentanaHabitacion.CheckedChanged += new System.EventHandler(this.chkSensor_CheckedChanged);
             // 
+            // chkPuertaHabitacion
+            // 
+            this.chkPuertaHabitacion.AutoSize = true;
+            this.chkPuertaHabitacion.Location = new System.Drawing.Point(77, -1);
+            this.chkPuertaHabitacion.Name = "chkPuertaHabitacion";
+            this.chkPuertaHabitacion.Size = new System.Drawing.Size(57, 17);
+            this.chkPuertaHabitacion.TabIndex = 4;
+            this.chkPuertaHabitacion.Text = "Puerta";
+            this.chkPuertaHabitacion.CheckedChanged += new System.EventHandler(this.chkSensor_CheckedChanged);
+            // 
             // chkPresenciaHabitacion
             // 
             this.chkPresenciaHabitacion.AutoSize = true;
-            this.chkPresenciaHabitacion.Location = new System.Drawing.Point(10, 20);
+            this.chkPresenciaHabitacion.Location = new System.Drawing.Point(80, 145);
             this.chkPresenciaHabitacion.Name = "chkPresenciaHabitacion";
             this.chkPresenciaHabitacion.Size = new System.Drawing.Size(73, 17);
             this.chkPresenciaHabitacion.TabIndex = 6;
@@ -628,7 +633,7 @@ namespace ProyectoDiscretas
             // lblCurrentTime
             // 
             this.lblCurrentTime.AutoSize = true;
-            this.lblCurrentTime.Location = new System.Drawing.Point(424, 48);
+            this.lblCurrentTime.Location = new System.Drawing.Point(481, 67);
             this.lblCurrentTime.Name = "lblCurrentTime";
             this.lblCurrentTime.Size = new System.Drawing.Size(30, 13);
             this.lblCurrentTime.TabIndex = 0;
@@ -636,30 +641,32 @@ namespace ProyectoDiscretas
             // 
             // lblInstrucciones
             // 
+            this.lblInstrucciones.BackColor = System.Drawing.Color.Transparent;
             this.lblInstrucciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblInstrucciones.Location = new System.Drawing.Point(427, 80);
+            this.lblInstrucciones.Location = new System.Drawing.Point(484, 127);
             this.lblInstrucciones.Name = "lblInstrucciones";
             this.lblInstrucciones.Size = new System.Drawing.Size(148, 302);
             this.lblInstrucciones.TabIndex = 6;
-            this.lblInstrucciones.Text = "Instrucciones:\r\n\r\n- Marque \"Presencia\" para detectar personas en la habitación.\r\n\r" +
-    "\n- Marque las casillas para ABRIR ventanas y puertas (sin marcar = cerradas).\r\n\r\n- Ajuste la temperatura " +
-    "con los controles numéricos.\r\n\r\n- Las luces se encienden automáticamente entre 6PM y 6AM si hay presencia.\r\n\r\n" +
-    "- El aire acondicionado se activa cuando la temperatura supera 22°C y la puerta y ventana están cerradas.";
+            this.lblInstrucciones.Text = resources.GetString("lblInstrucciones.Text");
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.BackgroundImage = global::ProyectoDiscretas.Properties.Resources.Plano;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(982, 506);
+            this.Controls.Add(this.panelComedor);
             this.Controls.Add(this.lblInstrucciones);
             this.Controls.Add(this.lblCurrentTime);
             this.Controls.Add(this.lblClock);
             this.Controls.Add(this.panelHabitacion);
             this.Controls.Add(this.panelCocina);
             this.Controls.Add(this.panelSala);
-            this.Controls.Add(this.panelComedor);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Sistema Domótico";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelComedor.ResumeLayout(false);
             this.panelComedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numTempComedor)).EndInit();

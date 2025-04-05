@@ -123,7 +123,7 @@
   <data name="lblInstrucciones.Text" xml:space="preserve">
     <value>Instrucciones:
 
-- Marque "Presencia" para detectar personas en la habitación.
+- Marque "SP" para detectar personas en la habitación.
 
 - Marque las casillas para ABRIR ventanas y puertas (sin marcar = cerradas).
 

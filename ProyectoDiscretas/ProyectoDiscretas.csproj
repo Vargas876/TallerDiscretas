@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="Plano.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Door1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Window.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

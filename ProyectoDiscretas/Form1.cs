@@ -1,4 +1,4 @@
-﻿// Form1.cs
+﻿
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -18,7 +18,7 @@ namespace ProyectoDiscretas
         // Current simulation time
         private DateTime currentTime;
 
-        // En Form1.cs, añade esto en el constructor después de InitializeComponent()
+       
         public Form1()
         {
             InitializeComponent();
@@ -93,8 +93,8 @@ namespace ProyectoDiscretas
         {
             // Rule: If temperature > 22°C and doors and windows are closed, turn on AC
             double roomTemp = (double)tempControl.Value;
-            bool isWindowClosed = !windowSensor.Checked; // Checked means open, unchecked means closed
-            bool isDoorClosed = !doorSensor.Checked;    // Checked means open, unchecked means closed
+            bool isWindowClosed = !windowSensor.Checked;
+            bool isDoorClosed = !doorSensor.Checked;   
 
             if (roomTemp > TEMP_THRESHOLD && isWindowClosed && isDoorClosed)
             {
@@ -123,5 +123,6 @@ namespace ProyectoDiscretas
         {
 
         }
+
     }
 }

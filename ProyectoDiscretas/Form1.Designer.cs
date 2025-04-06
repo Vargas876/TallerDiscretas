@@ -484,11 +484,13 @@ namespace ProyectoDiscretas
             // chkPuertaCocina
             // 
             this.chkPuertaCocina.AutoSize = true;
+            this.chkPuertaCocina.BackColor = System.Drawing.Color.Transparent;
             this.chkPuertaCocina.Location = new System.Drawing.Point(697, 102);
             this.chkPuertaCocina.Name = "chkPuertaCocina";
             this.chkPuertaCocina.Size = new System.Drawing.Size(95, 17);
             this.chkPuertaCocina.TabIndex = 4;
             this.chkPuertaCocina.Text = "Puerta Exterior";
+            this.chkPuertaCocina.UseVisualStyleBackColor = false;
             this.chkPuertaCocina.CheckedChanged += new System.EventHandler(this.chkSensor_CheckedChanged);
             // 
             // panelHabitacion
@@ -682,6 +684,7 @@ namespace ProyectoDiscretas
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(876, 248);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 13);
@@ -691,6 +694,7 @@ namespace ProyectoDiscretas
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(876, 303);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 13);
@@ -700,6 +704,7 @@ namespace ProyectoDiscretas
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(876, 354);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 13);
@@ -709,6 +714,7 @@ namespace ProyectoDiscretas
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(979, 167);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 13);
@@ -718,6 +724,7 @@ namespace ProyectoDiscretas
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(979, 64);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 13);
